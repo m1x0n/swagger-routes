@@ -24,6 +24,9 @@ const puppeteer = require('puppeteer');
   // Wait for the results page to load and display the results.
   await page.waitForSelector(appSelector)
 
+  // Delay for remote connections
+  await page.waitFor(1000)
+
   const routeInfo = await page.$$eval(routeSelector, (divs) => {
     return divs
         .map(div => {
