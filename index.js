@@ -25,7 +25,7 @@ const puppeteer = require('puppeteer');
   await page.waitForSelector(appSelector)
 
   // Delay for remote connections
-  await page.waitFor(1000)
+  await page.waitFor(5000)
 
   const routeInfo = await page.$$eval(routeSelector, (divs) => {
     return divs
