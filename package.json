@@ -1,0 +1,20 @@
+{
+  "name": "swagger-routes",
+  "version": "1.0.0",
+  "description": "Swagger UI routes parser with Puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node --no-warnings index.js http://localhost:8050"
+  },
+  "keywords": [
+    "swagger",
+    "ui",
+    "parser"
+  ],
+  "author": "m1x0n",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^3.0.4"
+  }
+}
